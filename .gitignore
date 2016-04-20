@@ -1,0 +1,10 @@
+src/*/obj/*
+src/*/fonts/*
+packages/*
+src/*/bin/Debug/*
+*/bin/*
+*/obj/Debug/*
+*/Areas/*/*
+src/*/bin/*/
+src/Tee.FamilyApp.DAL/obj/*
+Tests/Tee.FamilyApp.Tests/obj/*
