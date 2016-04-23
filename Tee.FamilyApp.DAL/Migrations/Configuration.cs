@@ -22,7 +22,7 @@ namespace Tee.FamilyApp.DAL.Migrations
                   FirstName = "James",
                   LastName = "Brown",
                   Gender = Gender.Male,
-                  BirthDetails = new BirthDetail
+                  BirthDetail = new BirthDetail
                   {
                       Country = "England",
                       DateOfBirth = DateTime.Parse("1989/05/21"),
@@ -53,7 +53,7 @@ namespace Tee.FamilyApp.DAL.Migrations
                   FirstName = "Bruce",
                   LastName = "Brown",
                   Gender = Gender.Male,
-                  BirthDetails = new BirthDetail
+                  BirthDetail = new BirthDetail
                   {
                       Country = "England",
                       DateOfBirth = DateTime.Parse("1940/07/01"),
@@ -77,7 +77,7 @@ namespace Tee.FamilyApp.DAL.Migrations
                   FirstName = "Jane",
                   LastName = "Brown",
                   Gender = Gender.Female,
-                  BirthDetails = new BirthDetail
+                  BirthDetail = new BirthDetail
                   {
                       Country = "England",
                       DateOfBirth = DateTime.Parse("1980/08/27"),

@@ -8,11 +8,6 @@ namespace Tee.FamilyApp.DAL
     {
         protected override void Seed(RootContext context)
         {
-            var branches = new List<Branch>
-            {
-                new Branch {FirstName = "Oluwatobi", LastName = "Adebiyi", Gender = Gender.Male  }
-            };
-
             base.Seed(context);
         }
     }

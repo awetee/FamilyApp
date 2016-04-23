@@ -2,10 +2,17 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using Tee.FamilyApp.Common.Enums;
 
     public class Branch : BaseEntity
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Gender Gender { get; set; }
+        public virtual ICollection<Link> Links { get; set; }
+        public virtual BirthDetail BirthDetail { get; set; }
+
         //public int Age
         //{
         //    get
@@ -13,13 +20,6 @@
         //        return this.GetAge();
         //    }
         //}
-
-        public BirthDetail BirthDetails { get; set; }
-        public string CoountryOfOrigin { get; set; }
-        public string FirstName { get; set; }
-        public Gender Gender { get; set; }
-        public string LastName { get; set; }
-        public virtual ICollection<Link> Links { get; set; }
 
         //private int GetAge()
         //{

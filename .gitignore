@@ -6,5 +6,6 @@ src/*/bin/Debug/*
 */obj/Debug/*
 */Areas/*/*
 src/*/bin/*/
-src/Tee.FamilyApp.DAL/obj/*
-Tests/Tee.FamilyApp.Tests/obj/*
+src/*/obj/*
+Tests/*/obj/*
+Tests/*/bin/*/*

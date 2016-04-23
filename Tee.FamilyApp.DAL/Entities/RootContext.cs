@@ -6,17 +6,21 @@ namespace Tee.FamilyApp.DAL
 {
     internal class RootContext : DbContext
     {
-        public RootContext() : base("RootContext")
+        public RootContext() : base("FamilyAppModel")
         {
         }
 
-        public DbSet<BirthDetail> BirthInfos { get; set; }
+        public DbSet<BirthDetail> BirthDetails { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Link> Links { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Entity<Branch>()
+                        .HasRequired(s => s.BirthDetail)
+                        .WithRequiredPrincipal(t => t.Branch);
         }
     }
 }
