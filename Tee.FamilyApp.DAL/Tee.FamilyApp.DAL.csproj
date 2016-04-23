@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\BirthDetails.cs" />
+    <Compile Include="Entities\IRepository.cs" />
     <Compile Include="Entities\Link.cs" />
     <Compile Include="Entities\RootContext.cs" />
     <Compile Include="Migrations\201604221958239_InitialMigration.cs" />
